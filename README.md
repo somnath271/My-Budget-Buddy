@@ -1,40 +1,106 @@
-<<<<<<< HEAD
-# My-Budget-Buddy
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Expense Management System with Note-Taking
 
-## Getting Started
+A modern, user-friendly web application designed to help users efficiently manage their finances and organize personal notes. The project integrates **Expense Management** and **Note-Taking** functionalities, offering secure and real-time features to enhance productivity and financial tracking.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Expense Management
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Give**: Track money lent to others. Automatically updates balances and displays transactions.
+2. **Take**: Record borrowed amounts. Balances adjust dynamically for better tracking.
+3. **Split**: Easily divide expenses among multiple people. Includes:
+   - **Paid**: Records paid amounts under "Take."
+   - **To Pay**: Shows pending payments under "Give."
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Note-Taking
 
-## Learn More
+- Create, edit, and delete notes with a simple, intuitive interface inspired by Google Keep.
+- Customize note colors for better organization.
+- Integrated **Expense Dashboard** at the top, summarizing financial transactions, with options to show or hide.
 
-To learn more about Next.js, take a look at the following resources:
+### Real-Time Functionality
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Updates are instantly visible across all devices for seamless collaboration using **Pusher**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Secure Authentication
 
-## Deploy on Vercel
+- Supports email and phone number login using **NextAuth** for robust user security.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> 11a9a3a (Initial commit from Create Next App)
+## 🎯 Purpose
+
+The primary goal of this project is to simplify personal expense tracking and note organization within a single platform. It aims to address common financial management challenges such as tracking loans, splitting expenses, and maintaining clarity in transactions. Additionally, the note-taking feature offers a structured and accessible way to keep personal thoughts and tasks organized.
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+
+- **React.js**: Component-based development for a dynamic user interface.
+- **Next.js**: Server-side rendering for better performance and SEO.
+- **Tailwind CSS**: Rapid styling with utility-first CSS.
+
+### Backend
+
+- **Next.js API Routes**: Handles RESTful endpoints for data operations.
+- **MongoDB**: Stores structured data securely, ensuring scalability.
+
+### Real-Time Updates
+
+- **Pusher**: Enables instant updates across devices and users.
+
+### Security
+
+- **NextAuth**: Implements secure authentication with email and phone number support.
+
+### Development Tools
+
+- **Prisma ORM**: Simplifies interaction with MongoDB, ensuring data consistency.
+- **VS Code**: Primary development environment.
+
+---
+
+## ⚙️ How It Works
+
+1. **Home Page**:
+
+   - Displays a project overview and navigation to "Expense Management" and "Notes" sections.
+   - Modern, dynamic animations enhance the user experience.
+
+2. **Expense Management**:
+
+   - Select "Give," "Take," or "Split" for specific operations.
+   - Real-time dashboard updates ensure clarity in financial tracking.
+
+3. **Notes Section**:
+   - Displays notes in a grid layout, similar to Google Keep.
+   - Users can manage their notes while optionally viewing the expense dashboard.
+
+---
+
+## 📈 Future Enhancements
+
+- Add budgeting and expense forecasting features.
+- Integrate advanced data analytics for spending insights.
+- Multi-language support for global usability.
+- Export options for financial data and notes.
+
+---
+
+## 📚 Installation
+
+### Prerequisites
+
+- Node.js and npm installed.
+- MongoDB database connection set up.
+
+### Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/somnath271/My-Budget-Buddy.git
+   ```

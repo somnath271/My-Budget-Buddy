@@ -9,9 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'primary-color': 'var(--primary-color)',
       },
+      ringColor: {
+        'primary-color': 'var(--primary-color)',
+      }
     },
   },
   plugins: [],

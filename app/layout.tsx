@@ -1,19 +1,22 @@
-import './globals.css';
-import Navbar from './components/Navbar';
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
 
-export const metadata = {
-  title: 'Smart Personal Assistance',
-  description: 'An integrated interface for notes and expenses',
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "My Budget Buddy",
+  description: "Effortlessly Track Expenses & Organize Notes",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body className="bg-gray-100">
-        <Navbar />
-        <main>{children}</main>
-
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

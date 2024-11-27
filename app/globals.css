@@ -3,21 +3,37 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary-color: #40C9A2;
+  --background-start: #A1F4DB;
+  --background-end: #40C9A2;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, var(--background-start), var(--background-end));
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@layer components {
+  .input-field {
+    @apply w-full px-4 py-2 bg-white/80 rounded-lg mb-4 outline-none ring-2 ring-transparent focus:ring-[var(--primary-color)] transition-all duration-200;
+  }
+
+  .login-button {
+    @apply w-full py-2 bg-white/90 rounded-lg text-[var(--primary-color)] font-semibold 
+    hover:bg-white transition-all duration-300;
+  }
 }
 
 @layer utilities {
