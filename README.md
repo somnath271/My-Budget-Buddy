@@ -104,3 +104,35 @@ The primary goal of this project is to simplify personal expense tracking and no
    ```bash
    git clone https://github.com/somnath271/My-Budget-Buddy.git
    ```
+2. Navigate to the project directory:
+   ```bash
+   cd My-Budget-Buddy
+   ```
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+5. Access the application at `http://localhost:3000`.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions to enhance the project's functionality and user experience. Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to submit improvements and bug fixes.
+
+Project preview
+![alt text](image.png)
+
+![alt text](image2.jpeg)
+
+![alt text](image3.jpeg)
+
+![alt text](image4.jpeg)
+
+![alt text](image5.jpeg)
